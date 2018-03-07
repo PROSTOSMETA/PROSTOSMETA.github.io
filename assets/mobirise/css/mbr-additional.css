@@ -1379,8 +1379,8 @@ body {
   }
 }
 .cid-qHQy872ai6 {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #efefef;
 }
 .cid-qHQy872ai6 .mbr-section-subtitle {
@@ -1474,6 +1474,9 @@ body {
   .cid-qHQy872ai6 .mbr-subscribe > * {
     margin: 0 0.5rem;
   }
+}
+.cid-qHQy872ai6 .mbr-section-subtitle B {
+  color: #0f7699;
 }
 .cid-qHQMaZyWTt {
   padding-top: 90px;
