@@ -3,7 +3,7 @@
     "name": "PROSTO SMETA",
     "currentPage": "index.html",
     "versionFirst": "4.0.14",
-    "uniqCompNum": 32,
+    "uniqCompNum": 35,
     "versionPublish": "4.7.6",
     "theme": {
       "name": "mobirise4",
@@ -227,25 +227,42 @@
         },
         {
           "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "background-color": "@bgColor",
-            ".mbr-text, blockquote": {
-              "color": "#767676"
+            "& when (@fullWidth = false)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
             },
-            ".mbr-text P": {
-              "color": "#0f7699",
-              "text-align": "center"
+            "background": "@bgColor",
+            "& when (@gradientBg)": {
+              "background": "linear-gradient(0deg, @color2, @bgColor)"
+            },
+            ".image-block": {
+              "margin": "auto",
+              "& when (@fullWidth)": {
+                "width": "100% !important"
+              }
+            },
+            "figcaption": {
+              "position": "relative",
+              "div": {
+                "position": "absolute",
+                "bottom": "0",
+                "width": "100%"
+              }
+            },
+            "@media (max-width: 768px)": {
+              ".image-block": {
+                "width": "100% !important"
+              }
             }
           },
-          "_name": "content1",
-          "_customHTML": "<section class=\"mbr-section article content1\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article><p>\n                <b> </b></p><p>Реклама :</p><p><i><b><a href=\"https://rdr.salesdoubler.com.ua/in/offer/1559?aid=65543&dlink=prostosmeta.github. io&source=Landing&campaign=KF.UA prostosmetagithub&promo=link\" target=\"_blank\" class=\"text-danger\">Срочно нужны деньги? Тогда жми прямо на этот текст! &nbsp;Получи кредит на любую свою банковскую &nbsp;карту за 15 минут не выходя из дома:</a></b><span style=\"font-size: 1rem;\"><b><a href=\"https://rdr.salesdoubler.com.ua/in/offer/1559?aid=65543&dlink=prostosmeta.github. io&source=Landing&campaign=KF.UA prostosmetagithub&promo=link\" target=\"_blank\">&nbsp;</a></b><span style=\"font-size: 1rem;\"><b><a href=\"https://rdr.salesdoubler.com.ua/in/offer/1559?aid=65543&dlink=prostosmeta.github. io&source=Landing&campaign=KF.UA prostosmetagithub&promo=link\" target=\"_blank\" class=\"text-danger\">4000 грн. под 0% на 30 дней ! </a></b></span></span><span style=\"font-size: 1rem;\"><a href=\"https://rdr.salesdoubler.com.ua/in/offer/1559?aid=65543&dlink=prostosmeta.github. io&source=Landing&campaign=KF.UA prostosmetagithub&promo=link\" target=\"_blank\">&nbsp;</a></span></i></p><p><i><span style=\"font-size: 1rem;\">(Даже с плохой кредитной историей.)</span></i></p><p><span style=\"font-size: 1rem;\">&nbsp;</span></p></div>\n        </div>\n    </div>\n</section>",
-          "_cid": "qTuwmwmUPa",
-          "_anchor": "content1-v",
+          "_name": "image3",
+          "_customHTML": "<section group=\"Images & Videos\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Полная ширина\" name=\"fullWidth\">\n\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"5\" step=\"1\" condition=\"fullWidth==false\">\n\n        <input type=\"checkbox\" title=\"Текст\" name=\"showText\" checked>        \n        \n        <input type=\"range\" inline title=\"Ширина\" name=\"imageSize\" min=\"20\" max=\"100\" value=\"36\" step=\"1\" condition=\"fullWidth==false\">\n\n        <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#ffffff\" condition=\"fullWidth==false\">\n        <input type=\"checkbox\" title=\"Градиент\" name=\"gradientBg\" condition=\"fullWidth==false\" checked>\n        <input type=\"color\" title=\"Цвет 2\" name=\"color2\" value=\"#149dcc\" condition=\"gradientBg\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <figure class=\"mbr-figure\" mbr-class=\"{'container':fullWidth==false}\">\n            <div class=\"image-block\" mbr-style=\"{'width':imageSize+'%'}\">\n                <a href=\"http://ali.pub/2ncywv\"><img src=\"@PROJECT_PATH@/assets/images/original-300x250.png\" width=\"1400\" alt title></a>\n                <figcaption class=\"mbr-figure-caption mbr-figure-caption-over\" mbr-if=\"showText\">\n                    <div mbr-text class=\"container pb-5 mbr-white align-center mbr-fonts-style\" mbr-theme-style=\"display-4\"></div>\n                </figcaption>\n            </div>\n    </figure>\n</section>",
+          "_cid": "qY4y4cHPXt",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
+          "_params": {},
+          "_anchor": "image3-y"
         },
         {
           "_name": "footer1",
